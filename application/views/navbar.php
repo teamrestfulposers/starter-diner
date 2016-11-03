@@ -12,11 +12,14 @@
 		</div>
 
 		<div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-				<li><a href="/">Home</a></li>
-				<li><a href="/hiring">Hiring</a></li>
-				<li><a href="/shopping">Shopping</a></li>
-            </ul>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/hiring">Hiring</a></li>
+                        <li><a href="/shopping">Shopping</a></li>
+                        <li><a href="/toggle">Toggle Role</a></li>
+                        <li><a href="/crud">crud</a></li>
+                    </ul>
+                    <p class="navbar-text navbar-right">Role: {userrole}</p>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
 </nav>
