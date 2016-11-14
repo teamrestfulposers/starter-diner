@@ -35,6 +35,11 @@ class Crud extends Application {
         $this->data['items'] = $this->menu->all();
         $this->render();
     }
+    function cancel() {
+        $this->session->unset_userdata('key');
+        $this->session->unset_userdata('record');
+        $this->index();
+    }
 
     function cancel() {
         $this->session->unset_userdata('key');
@@ -158,6 +163,7 @@ class Crud extends Application {
         $this->data['fprice'] = makeTextField('Price, each', 'price', $record->price);
         $this->data['fpicture'] = makeTextField('Item image', 'picture', $record->picture);
 
+
         $cats = $this->categories->all(); // get an array of category objects
         foreach ($cats as $code => $category) // make it into an associative array
             $codes[$category->id] = $category->name;
@@ -166,6 +172,7 @@ class Crud extends Application {
         // show the editing form
         $this->data['pagebody'] = "mtce-edit";
         $this->show_any_errors();
+
         $this->render();
     }
 
