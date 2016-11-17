@@ -41,12 +41,6 @@ class Crud extends Application {
         $this->index();
     }
 
-    function cancel() {
-        $this->session->unset_userdata('key');
-        $this->session->unset_userdata('record');
-        $this->index();
-    }
-
     function save() {
         // try the session first
         $key = $this->session->userdata('key');
