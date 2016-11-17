@@ -27,6 +27,7 @@
 				<div class='col-md-3'>
 					{receipt}
 				</div>
+                            <a class="btn btn-default" role="button" href="/shopping/cancel">Cancel This Order</a>
 			</div>
             {content}
             <p class="footer">Page rendered in <strong>0.0155</strong> seconds. 
