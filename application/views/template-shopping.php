@@ -27,6 +27,7 @@
 				<div class='col-md-3'>
 					{receipt}
 				</div>
+                            <a class="btn btn-primary btn-default" role="button" href="/shopping/checkout">Checkout</a>
                             <a class="btn btn-default" role="button" href="/shopping/cancel">Cancel This Order</a>
 			</div>
             {content}
